@@ -1,0 +1,32 @@
+Comandos a ejecutar para usar el bot:
+
+Compilar el proyecto y los Archivos .sol 
+        npx hardhat compile
+
+Puesta en Marcha de la simulacion de un Fork De Mainnet en la red de <URL>.
+Se puede usar la oficial de ankr aunque suele estar congetsionada 
+    tambien se puede usar cualquier otro RCP provider.)
+
+        npx hardhat node --fork https://rpc.ankr.com/polygon
+
+Ejecutar test (despues de ejecutar el Fork)
+        npx hardhat test test/index.test.ts
+
+
+Para testear en Local, el .env debe apuntar a http://127.0.0.1:8545/
+Despues hay que ejecutar un Nodo de hardhat, y despues ejecutar el contrato en Local:
+        npx hardhat node
+        npx hardhat run scripts/deployDodoFlashloan.ts --network localhost
+
+
+Para testear en "Testnet" o RCP simulators como phalcon, el .env debe apuntar a <RCP_LINK>
+Despues hay que ejecutar un Nodo de hardhat, y despues ejecutar el contrato en Local:
+        npx hardhat node --fork https://rpc.phalcon.blocksec.com/rpc_976e899d81304115b89c38e35eded83f
+
+Despues hay que escoger una de las cuentas de prueba que ofrece y ejecutar el deploy con
+        npx hardhat run scripts/deployDodoFlashloan.ts --network phalcon
+
+
+
+9577fe55866de9e9c87659c730ffda17c8458709a2c941111c280f12250a4070
+9577fe55866de9e9c87659c730ffda17c8458709a2c941111c280f12250a4070

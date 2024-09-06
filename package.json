@@ -1,0 +1,55 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.7",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/ignition-core": "^0.15.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^10.0.7",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "chai": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "ethers": "6.13.2",
+    "hardhat": "2.22.5",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.5.4"
+  },
+  "name": "botarbitraje",
+  "version": "1.0.0",
+  "description": "This is a bot which search for opportunities on the crypto market.",
+  "main": "index.js",
+  "dependencies": {
+    "@aave/core-v3": "^1.19.3",
+    "@uniswap/v3-core": "^1.0.1",
+    "ccxt": "^4.3.39",
+    "ethereum-cryptography": "^1.2.0",
+    "solc": "^0.7.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "typechain": "typechain --target ethers-v5 --out-dir src/types './src/abis/**/*.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerDotraw/BotArbitraje.git"
+  },
+  "author": "TylerDotRaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerDotraw/BotArbitraje/issues"
+  },
+  "homepage": "https://github.com/TylerDotraw/BotArbitraje#readme"
+}
